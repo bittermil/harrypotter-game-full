@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../page3/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&amp;family=Lobster&amp;family=Pacifico&amp;display=swap"
+      rel="stylesheet"
+    />
+    <title>Harry Potter Game</title>
+  </head>
+
+  <body>
+    <main class="game">
+      <div class="wrapper">
+        <div class="game__description">
+          <span class="name"></span> Welcome to the next game... Here I'll
+          reveal the art of divination for you. Let us read your mind. Are you
+          ready? If yes, think of your favorite Harry Potter character and I'll
+          try to guess it.
+        </div>
+        <div class="gamepad">
+          <div class="pic"></div>
+          <form class="ask-question">
+            <div class="question"></div>
+            <div class="question__buttons">
+              <button type="button" class="game-button" data-name="y">
+                True
+              </button>
+              <button type="button" class="game-button" data-name="n">
+                False
+              </button>
+              <button type="button" class="game-button" data-name="na">
+                No idea
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="game-result"></div>
+        <div class="result_buttons">
+          <div class="a_btn">
+            <a href="../page2/index.html"
+              ><img
+                src="../assets/left.gif"
+                class="btn_pic"
+                alt="Previous page"
+            /></a>
+          </div>
+          <button
+            type="button"
+            class="restart"
+            onclick="window.location.reload()"
+          >
+            Restart
+          </button>
+          <div class="a_btn">
+            <a href="../page4/index.html"
+              ><img src="../assets/right.gif" class="btn_pic" alt="Next page"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../page3/index.js"></script>
+  </body>
+</html>

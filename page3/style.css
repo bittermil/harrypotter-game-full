@@ -1,0 +1,118 @@
+body {
+    background: url("../assets/background_3.jpeg") center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #3b8d99;
+    font-family: "Pacifico", cursive;
+    letter-spacing: 3px;
+    color: #e4e4e4;
+    text-shadow: 3px 3px #070707;
+    font-size: 25px;
+  }
+  
+  .wrapper {
+    background: rgba(254, 182, 41, 0.4);
+    width: 700px;
+    min-height: 100vh;
+    padding: 30px;
+    margin: 0 auto;
+  }
+  
+  .game__description {
+
+    text-align: center;
+  }
+  
+  .pic {
+    background: url("../assets/unknown.jpeg") top center no-repeat;
+    -webkit-box-shadow: #fbb204 0 0 10px;
+            box-shadow: #fbb204 0 0 10px;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 30px auto;
+  }
+  
+  .ask-question {
+    text-align: center;
+  }
+  
+  .question {
+    margin-bottom: 8px;
+    font-size: 28px;
+    
+  }
+  
+  .game-result {
+    display: none;
+    color: #fdff99;
+    text-align: center;
+    
+  }
+  
+  .result_buttons {
+    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px auto;
+  }
+  
+  button {
+    border-radius: 3px;
+    border: none;
+  }
+  
+  button:hover,
+  .btn_pic:hover {
+    cursor: pointer;
+    -webkit-box-shadow: #fbb204 0 0 10px;
+            box-shadow: #fbb204 0 0 10px;
+  }
+  
+  .btn_pic {
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  @media all and (max-width: 800px) {
+    body {
+      font-size: 20px;
+    }
+    .wrapper {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      width: 500px;
+    }
+    .pic {
+      width: 200px;
+      height: 350px;
+      margin: 40px auto;
+    }
+    .question {
+      margin-bottom: 4px;
+      font-size: 20px;
+    }
+  }
+  
+  @media all and (max-width: 500px) {
+    body {
+      font-size: 22px;
+    }
+    .wrapper {
+      width: 100%;
+    }
+    .pic {
+      width: 200px;
+      height: 350px;
+      margin: 40px auto 20px;
+    }
+    .question {
+      margin-bottom: 4px;
+      font-size: 24px;
+    }
+  }

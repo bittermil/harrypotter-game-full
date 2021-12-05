@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+    color:white;
+    
+}
+
+.wrapper{
+    max-width:1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic{
+    margin-top: 10px;
+}
+
+.par{
+    text-align: center;
+    max-width: 85%;
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px rgb(77, 77, 6);
+    
+}
+@keyframes mymove {
+    from {bottom: -100px;}
+    to {bottom: 0px;}
+  }
+.btn{
+
+    display:none;
+    position: relative;
+    animation: mymove 5s;
+}
+
+.btn_pic{
+    width: 100px;
+    height: 100px;
+}
+
+
+@media all and (max-width:800px){
+
+    .pic{
+         height:150px;
+    }
+
+    .par{
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width:500px){
+
+    .pic{
+         height:100px;
+    }
+
+    .par{
+        font-size: 30px;
+    }
+}
+

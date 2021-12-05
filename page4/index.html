@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garry Potter Game</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon.ico" />
+    <link rel="stylesheet" href="../page4/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&amp;family=Lobster&amp;family=Pacifico&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img
+          src="../assets/header_harry-potter.png"
+          class="header_img"
+          alt=""
+        />
+      </div>
+
+      <div class="rules">
+        <p id="greeting"></p>
+
+        <p>
+          Ты готов к новым испытаниям? У тебя есть всего 5 минут чтобы отгадать
+          героев. Нажимай на кнопку и время начнёт свой отсчёт.<br />
+          Это испытание не из лёгких, я перемешал все буквы в их именах. Но
+          маленькую подсказку я тебе дам: Имя героя начинается с большой
+          буквы...
+        </p>
+      </div>
+      <div class="gamearea">
+        <p class="message"></p>
+        <input type="text" class="hidden" />
+        <div class="anime">
+          <div class="mini pict1">
+            <img src="../assets/mini_germiona_3.png" class="a1" alt="" />
+          </div>
+          <div class="btn_btn">
+            <button class="btn">Начинаем!</button>
+          </div>
+          <div class="mini pict2">
+            <img src="../assets/mini_dambldor_6.png" class="a2" alt="" />
+          </div>
+        </div>
+        <div class="a_btn">
+          <a href="../page2/index.html"
+            ><img src="../assets/left.gif" class="btn_pic" alt=""
+          /></a>
+          <a href="../page5/index.html"
+            ><img src="../assets/right.gif" class="btn_pic" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="../page4/index.js"></script>
+  </body>
+</html>
