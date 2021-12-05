@@ -28,16 +28,16 @@ function calculateTime() {
     amount--;
 
     console.log(amount);
-    if (amount < 0) {
+    if (amount < 0 || namesList.length === 0) {
         stopTimer();
         amount = 0;
         endGame();
     }
+}
 
-    function stopTimer() {
-        clearInterval(timerID);
-        timerOn = false;
-    }
+function stopTimer() {
+    clearInterval(timerID);
+    timerOn = false;
 }
 
 let timerID = setInterval(1000);
@@ -56,10 +56,10 @@ function start() {
         guess.classList.toggle(`hidden`);
         newWords = createNewWords();
 
-        if (newWords) {
-            randWords = scrambleWords(newWords.split(``)).join(``);
-            message.innerHTML = randWords;
-        }
+
+        randWords = scrambleWords(newWords.split(``)).join(``);
+        message.innerHTML = randWords;
+
 
     } else {
         check();
@@ -68,7 +68,6 @@ function start() {
 }
 
 function createNewWords() {
-    if (namesList.length === 0) endGame();
     let tempNameList = namesList[Math.floor(Math.random() * namesList.length)];
     console.log(tempNameList);
     return tempNameList;

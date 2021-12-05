@@ -1,27 +1,27 @@
-body{
+body {
     margin: 0;
-    padding:0;
+    padding: 0;
     background-image: url(../assets/background_4.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     min-height: 100vh;
     background-color: black;
     font-family: 'Pacifico', cursive;
     color: white;
-    font-size:25px;
+    font-size: 25px;
 }
 
-.header{
+.header {
     text-align: center;
 }
 
-.header_img{
+.header_img {
     height: 200px;
     margin-top: 10px;
 }
 
-.wrapper{
-    max-width:1200px;
+.wrapper {
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -31,110 +31,114 @@ body{
 }
 
 
-.rules{
+.rules {
     text-align: center;
 }
 
-.timer{
+.timer {
     font-size: 70px;
-    text-shadow: 4px 3px rgb(41, 41, 25); 
+    text-shadow: 4px 3px rgb(41, 41, 25);
 }
 
-.gamearea{
+.gamearea {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.message{
+.message {
     text-align: center;
     font-size: 25px;
-    
+
 }
 
-input{
-   width: 200px; 
-   height: 40px;
-   font-size: 25px;
-   text-align: center;
-   margin: 2% 0;
-   outline:none;
-   border-radius: 25px;
+input {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    margin: 2% 0;
+    outline: none;
+    border-radius: 25px;
 }
 
-.anime{
-    display:flex;
+.anime {
+    display: flex;
     justify-content: space-evenly;
 }
 
-.btn, .one{
+.btn,
+.one {
     height: 70px;
     background-color: whitesmoke;
-    color:rgb(187, 4, 20);
-    border:none;
+    color: rgb(187, 4, 20);
+    border: none;
     border-radius: 10px;
     margin-top: 10px;
     font-size: 25px;
     padding: 1rem 2rem;
     font-family: 'Pacifico', cursive;
-    
+
 }
 
-.btn:hover{
+.btn:hover,
+.one:hover {
     background-color: rgb(231, 184, 55);
     border: solid 2px rgb(231, 184, 55);
     cursor: pointer;
 }
 
-.hidden{
-    display:none;
-}
-
-.a_btn{
+.hidden {
     display: none;
-    margin-top:20px;
 }
 
-.btn_pic{
-    width:85px;
+.a_btn {
+    display: none;
+    margin-top: 20px;
+}
+
+.btn_pic {
+    width: 85px;
     height: 85px;
     margin: 0 30px;
 }
 
-.a1, .a2{
+.a1,
+.a2 {
     margin: 0 30px;
 }
 
-@media all and (max-width:800px){
+@media all and (max-width:800px) {
 
-    .header_img{
-         height:150px;
+    .header_img {
+        height: 150px;
     }
 
-    
+
 }
 
-@media all and (max-width:500px){
+@media all and (max-width:500px) {
 
-    .header_img{
-         height:100px;
+    .header_img {
+        height: 100px;
     }
 
-    body{
+    body {
         font-size: 20px;
     }
 
-    .a1, .a2{
+    .a1,
+    .a2 {
         margin: 0;
     }
 
-    .message{
+    .message {
         font-size: 20px;
     }
 
-    .btn, .one{
+    .btn,
+    .one {
         font-size: 20px;
     }
 }
-
